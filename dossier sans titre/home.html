@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games4U</title>
+    <link rel="stylesheet" href="syle2.css">
+    <script src="https://kit.fontawesome.com/7fdb608e31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <a href="#" class="logo">Games4U</a>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">Buy</a></li>
+        <li><a href="product2.html">Category</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="product.html">PS5</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">SWITCH</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a id= "sign" href="signup.html">Log out</a></li>
+    </ul>
+</header>
+
+<section class="s1">
+    <div class="bg">
+        <div class="content">
+            <h1>Reach the Top!</h1>
+            <p>Here players don't just watch a story unfold – they become part of it.<br> Welcome to Games4U, your ultimate destination for endless gaming adventures! With user-friendly navigation and regularly updated content,<br> Games4U ensures that the fun never stops. Get ready to embark on a journey filled with thrills, competition, and endless entertainment. Let the games begin!</p>
+            <a href="product.html" class="btn">Join Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="card-container">
+        <div class="card">
+            <div class="img">
+                <img src="135179-1.jpg.webp" alt="Spider Man 2">
+            </div>
+            <div class="content">
+                <h2>Spider Man 2</h2>
+                <span>Le jeu met en vedette Peter Parker dans le rôle de Spider-Man, naviguant dans la ville de New York pour combattre le crime et sauver la ville des menaces super-vilaines.</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="raf,360x360,075,t,fafafa-ca443f4786.jpg" alt="Elden Ring">
+            </div>
+            <div class="content">
+                <h2>Elden Ring</h2>
+                <span>Elden Ring promet une expérience de jeu riche en profondeur, avec une histoire complexe et des paysages magnifiques à découvrir.</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="4xJ8XB3bi888QTLZYdl7Oi0s.png.webp" alt="GOD OF WAR : RAGNAROK">
+            </div>
+            <div class="content">
+                <h2>GOD OF WAR : RAGNAROK</h2>
+                <span>Le jeu promet d'explorer davantage la relation entre Kratos et Atreus, ainsi que de plonger plus profondément dans la mythologie nordique.</span>
+            </div>
+           
+        </div>
+       
+    </div>
+</section>
+
+<section class="s2">
+    <div class="bg">
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Your go-to source for all things gaming. Discover new games, read reviews, and stay updated with the latest gaming news.<br> For gamers looking to stay on top of their hobby, our platform is your go-to source for all things gaming. Whether you're an avid console player, a PC enthusiast, or someone who loves mobile gaming, we have something for you.<br> Discover new and upcoming games across all platforms, with detailed previews that give you a sneak peek into what's next in the gaming world.<br>
+
+            Our comprehensive game reviews are crafted by passionate gamers and industry experts,<br> providing you with honest and insightful opinions to help you decide which games are worth your time and money.<br> Stay updated with the latest gaming news, from major announcements and industry trends to patch notes and developer interviews,<br> ensuring you never miss out on what's happening in the gaming universe.<br>
+            
+            Join our community to engage with fellow gamers,<br> share your experiences, and participate in discussions about your favorite games. Whether you're looking for in-depth analysis, the latest updates, or simply want to discover something new, our platform is designed to be your ultimate gaming companion.</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footercontent">
+            <h1>Follow Us</h1>
+            <ul class="icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footercontent">
+            <h1>Contact Us</h1>
+            <ul class="list2">
+                <li><a href="mailto:Amine.nabil@gmail.com">Amine.nabil@gmail.com</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Our Stores</a></li>
+            </ul>
+        </div>
+        <div class="footercontent">
+            <h1>Quick Links</h1>
+            <ul class="list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="btnbar">
+        <p>2024 - Games4U</p>
+    </div>
+</footer>
+
+<script>
+    //document.getElementById("sign").innerHTML="test";
+    window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    
+</script>
+</body>
+</html>

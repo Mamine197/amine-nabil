@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background-image: url(horizon-forbidden-west-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.main{
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px black;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+#chk{
+    display: none;
+}
+.signup{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+label{
+    color: aliceblue;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5% ease-in-out;
+}
+input{
+    width: 80% ;
+    height: 20px;
+    background:white;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px; 
+    border: none;
+    outline: none; 
+    border-radius: 5px;
+    }
+
+button{
+width: 60%;
+height: 40px;
+margin: 10px auto;
+justify-content: center;
+display: block; 
+color:#fff;
+background: #369bd2;
+font-size: lem; 
+font-weight: bold; 
+margin-top: 20pm; 
+outline: none; 
+border: none;
+border-radius: 5px;
+transition: .2s ease-in;
+cursor: pointer;
+}
+button :hover{
+    background: rgb(188, 215, 14);
+}
+
+.login {
+height: 460px; 
+background :rgb(245, 247, 248);
+border-radius: 60% / 10%;
+transform: translateY(-30px);
+transition: .8s ease-in-out;
+}
+.login label {
+color: #3b8a53;
+transform: scale(.6);
+transition: 0.5s;
+}
+#chk:checked ~ .login{
+transform: translateY(-380px);
+}
+#chk:checked ~ .login label{
+transform: scale(1);
+}
+.SignUp label{
+    transform: scale(1); 
+    transition: 0.5s;
+}
+#chk:checked ~ .SignUp label{
+    transition: 0.5s;
+    transform: scale(.6);
+}
+.fullName{
+    display: flex;
+    margin: 10px;
+}
+.fullName input{
+    width: 35% ;
+}
+span{
+    display: flex;
+    color: rgb(1, 1, 1);
+   justify-content: center;
+}
+
+.show-pass-container{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    margin-bottom: -50px;
+    margin-top: -50px;
+    width: 80%;
+    font-size: 0.4em;
+}
+
+.show-pass-container label{
+  margin-left: -300px;
+  color: black;
+}
+
+

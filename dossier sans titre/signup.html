@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="SignUp">
+            <form action="Home.html" onsubmit="return SignUp()">
+                <label for="chk" aria-hidden="true">Sign Up</label>
+                <div class="fullName">
+                    <input id="Fnam" type="text" name="text" placeholder="First Name" required>
+                    <input id="Lnam" type="text" name="text" placeholder="Last Name" required>
+                </div>
+                <input id="Phone" type="text" name="text" placeholder="Phone Numbre" required>
+                <input id="UpEmail" type="email" name="email" placeholder="Email" required>
+                <input id="UPPassword" type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="login">
+            <form action="Home.html" onsubmit="return SignIn()">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" id="InEmail" name="email" placeholder="Email" required>
+                <input type="password" id="InPassword" name="password" placeholder="Password" required>
+                <div class="show-pass-container">
+                <input type="checkbox"onclick="showpass()"id="show-pass-checkbox">
+                <label for="show-pass-checkbox"> show passowrd</label>
+            </div>
+                <span id="span"></span>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var users = [
+            { email: "aminekadaoui@gmail.com", password: "azerty", phone:"0666778899",fname: "Amine" ,  lname: "kadaoui" },
+            { email: "AmineNabil@gmail.com", password: "qwerty", phone:"0666778899",fname: "Amine" ,  lname: "Nabil"  }
+        ];
+        let signedIn = fasle;
+        getElementById("sign").innerHTML="test";
+        function SignIn(){
+            var Email = document.getElementById("InEmail").value;
+            var Password= document.getElementById("InPassword").value;
+            for(let i=0; i < users.length ;i++){
+                if(Email===users[i].email&&Password===users[i].password){
+                    alert("Welcome "+users[i].Fname);
+                    return true;
+                }
+            }
+            document.getElementById("span").innerHTML="Email or password incorrect !!!";
+            return false;
+        }
+
+        function SignUp(){
+            var Email = document.getElementById("UpEmail").value;
+            var Password = document.getElementById("UPPassword").value;
+            var Fname = document.getElementById("Fnam").value;
+            var Lname = document.getElementById("Lnam").value;
+            var Phone = document.getElementById("Phone").value;
+            for(let i=0; i < users.length ;i++){
+                if(Email===users[i].email){
+                    alert("email already used try another one");
+                    return false;
+                }
+            }
+            users.push({ email: Email, password: Password, phone: Phone, fname:Fname, lname:Lname});
+            alert("BienVenu");
+            return true;
+        }
+
+        function showpass(){
+            var passinput=document.getElementById('InPassword')
+            if(passinput.type=='password'){
+               passinput.type='email';
+
+            }
+            else if(passinput.type=='email'){
+                passinput.type='password';
+            }
+        }
+    </script>
+</body>
+</html>
